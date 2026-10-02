@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --bg-app: #0a0e14;
+  --bg-surface: #101622;
+  --bg-surface-secondary: #161e2e;
+  --bg-surface-tertiary: #1c263a;
+  --bg-sidebar: #06090e;
+  --border-color: #202a3a;
+  --border-darker: #2c384c;
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --accent-yellow: #facc15;
+  --accent-yellow-light: #422006;
+  --accent-tape-bg: #eab308;
+  --accent-tape-text: #000000;
+  --danger-text: #f87171;
+  --danger-bg: #450a0a;
+  --danger-border: #7f1d1d;
+  --warning-text: #fbbf24;
+  --warning-bg: #451a03;
+  --warning-border: #78350f;
+  --success-text: #4ade80;
+  --success-bg: #052e16;
+  --success-border: #14532d;
+  --timeline-line: #202a3a;
+  --input-bg: #090d14;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    background-color: #0a0e14;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #0a0e14;
+    color: #f8fafc;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Subtle Yellow/Black Evidence Tape Diagonal Accent */
+.evidence-tape-diagonal {
+  background: repeating-linear-gradient(
+    -45deg,
+    #eab308,
+    #eab308 8px,
+    #18181b 8px,
+    #18181b 16px
+  );
+}
+
+.evidence-tape-subtle {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(234, 179, 8, 0.8),
+    rgba(234, 179, 8, 0.8) 6px,
+    rgba(24, 24, 27, 0.8) 6px,
+    rgba(24, 24, 27, 0.8) 12px
+  );
+}
+
+/* Custom discreet scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #202a3a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2c384c;
+}

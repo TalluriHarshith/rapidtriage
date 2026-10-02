@@ -1,0 +1,6 @@
+{
+  "name": "RapidTriage",
+  "description": "Portable Endpoint Forensic Triage & Incident Timeline. Collect, correlate, and investigate Windows endpoint artifacts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
